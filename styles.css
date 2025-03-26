@@ -5,86 +5,109 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f4f4f9;
 }
 
 /* Header */
 header {
-    background: #4CAF50;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
-    padding: 20px 10px;
+    padding: 40px 20px;
     text-align: center;
+    border-bottom: 5px solid #2575fc;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 header p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
+    margin: 10px 0 0;
+    font-size: 1.3em;
+    font-style: italic;
 }
 
 /* Navigation */
 nav {
-    background: #333;
-    color: white;
-    padding: 10px 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background: #2575fc;
+    color: white;
 }
 
 /* Main Content */
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+    margin: 20px auto;
     background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 section h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    color: #2575fc;
+    border-bottom: 3px solid #2575fc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+section p, section ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+section ul li {
+    margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background: #333;
     color: white;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
 }
 
 footer p {
     margin: 0;
+    opacity: 0.8;
 }
